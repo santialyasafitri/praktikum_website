@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resep Makanan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h2 {
+            color: #ff6347;
+            border: 2px solid #ff6347;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 10px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h3 {
+            color: #4682b4;
+            margin-top: 40px;
+        }
+        .bahan {
+            background-color: #ded3a7;
+        }
+        .cara-membuat {
+            background-color: #a4d1e6;
+        }
+        ul, ol {
+            text-align: left;
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        li {
+            color: #556b2f;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        footer {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4682b4;
+            color: white;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #315f7e;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Resep Pancake</h2>
+
+    <img src="C:\xampp\htdocs\pemrograman\praktikum html\pancake.jpg">
+
+    <h3>Bahan-bahan:</h3>
+    <ul class="bahan">
+        <li>1 cup tepung terigu</li>
+        <li>2 sendok makan gula pasir</li>
+        <li>2 sendok teh baking powder</li>
+        <li>1/2 sendok teh garam</li>
+        <li>1 cup susu</li>
+        <li>1 butir telur</li>
+        <li>2 sendok makan mentega, lelehkan</li>
+    </ul>
+
+    <h3>Cara Membuat:</h3>
+    <ol class="cara-membuat">
+        <li>Campurkan tepung terigu, gula pasir, baking powder, dan garam dalam sebuah mangkuk.</li>
+        <li>Dalam mangkuk terpisah, kocok susu, telur, dan mentega leleh.</li>
+        <li>Tuang campuran cair ke dalam campuran tepung dan aduk hingga tercampur rata.</li>
+        <li>Panaskan wajan anti lengket dan oleskan sedikit mentega.</li>
+        <li>Tuang adonan pancake ke wajan dan masak hingga berwarna kecoklatan.</li>
+        <li>Sajikan pancake dengan topping sesuai selera, seperti sirup atau buah segar.</li>
+    </ol>
+
+    <div class="button-container">
+        <button class="button" onclick="cekResep()">Cek</button>
+        <button class="button" onclick="cetakResep()">Cetak</button>
+    </div>
+
+    <footer>
+        &copy; Copyright Santi Alya Safitri 2024
+    </footer>
+
+    <script>
+        function cekResep() {
+            console.log('Resep Pancake');
+        }
+
+        function cetakResep() {
+            window.print();
+        }
+    </script>
+    
+</body>
+</html>
