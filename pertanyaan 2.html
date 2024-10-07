@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Menu Makanan</title>
+    <link rel="stylesheet" href="menu makanan selector.css" type="text/css">
+    <script language="JavaScript" src="pesanan.js"></script>
+</head>
+<body>
+
+    <h1>Daftar Menu Restoran Santi Alya Safitri</h1>
+
+    <img src="https://png.pngtree.com/png-clipart/20230124/ourlarge/pngtree-menu-illustration-of-spicy-chili-grilled-chicken-in-a-tasty-and-png-image_6564456.png" width="100" height="100">
+
+    <nav>
+        <a href="file:///C:/xampp/htdocs/pemrograman/praktikum%20html/MENU%20menu%20makanan.html">MENU</a> |
+        <a href="file:///C:/xampp/htdocs/pemrograman/praktikum%20html/about%20me.html">ABOUT</a>
+    </nav>
+
+    <table>
+        <tr title="Menu Makanan">
+            <th>No.</th>
+            <th>Nama Makanan</th>
+            <th>Harga</th>
+            <th>Tautan Resep</th>
+            <th>Gambar</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nasi Ayam Bakar</td>
+            <td>12.000</td>
+            <td><a href="https://cookpad.com/id/resep/10940823-nasi-ayam-bakar">Lihat Resep</a></td>
+            <td><img src="https://img-global.cpcdn.com/recipes/7fa7fdc21d48af83/680x482cq70/nasi-ayam-bakar-foto-resep-utama.jpg" alt="Nasi Ayam Bakar"></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nasi Telur Dadar</td>
+            <td>10.000</td>
+            <td><a href="https://cookpad.com/id/resep/16513005-nasi-telur-dadar-rawit">Lihat Resep</a></td>
+            <td><img src="https://img-global.cpcdn.com/recipes/e8420fea67281b0c/680x482cq70/nasi-telur-dadar-rawit-foto-resep-utama.jpg" alt="Nasi Telur Dadar"></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Ketoprak</td>
+            <td>13.000</td>
+            <td><a href="https://cookpad.com/id/resep/6756103-ketoprak">Lihat Resep</a></td>
+            <td><img src="https://img-global.cpcdn.com/recipes/835a1524e8167639/680x482cq70/ketoprak-foto-resep-utama.jpg" alt="Ketoprak"></td>
+        </tr>
+    </table>
+
+    <h2>Pesanan Anda</h2>
+    <form id="pesananForm">
+        <input type="checkbox" id="nasiAyam" name="makanan" value="Nasi Ayam Bakar"> Nasi Ayam Bakar<br>
+        <input type="checkbox" id="nasiTelur" name="makanan" value="Nasi Telur Dadar"> Nasi Telur Dadar<br>
+        <input type="checkbox" id="ketoprak" name="makanan" value="Ketoprak"> Ketoprak<br>
+        <br>
+        <button type="button" onclick="akhiriPesanan()">Akhiri Pesanan</button>
+    </form>
+    
+    <footer>
+        <p>@Copyright Santi Alya Safitri 2024</p>
+    </footer>
+
+</body>
+</html>
