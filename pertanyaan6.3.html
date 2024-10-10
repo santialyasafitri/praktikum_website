@@ -2,13 +2,10 @@
 <html lang="en">
   <head>
     <title>Salon Bonus</title>
-  </head>
-  <body>
-    <p>
-      <script language="JavaScript">
-
-        function cekBonus() {
-
+    
+    <script language="JavaScript">
+      
+      function cekBonus() {
         let totalKunjungan = parseInt(prompt("Masukkan total kunjungan ke salon:"));
         let jumlahKupon = totalKunjungan;
         let mendapatkanBonus = (totalKunjungan >= 10) ? "Ya" : "Tidak";
@@ -16,12 +13,12 @@
         alert("Total kunjungan: " + totalKunjungan + 
               "\nPotongan kupon yang dimiliki: " + jumlahKupon + 
               "\nApakah mendapatkan kunjungan gratis? " + mendapatkanBonus);
-}
-      </script>
-    </p>
-</head>
-<body>
+      }
+    </script>
+  </head>
+  <body>
     <h1>Salon Bonus Checker</h1>
     <button onclick="cekBonus()">Cek Bonus Pelanggan</button>
-</body>
+  </body>
 </html>
+
