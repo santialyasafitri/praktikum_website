@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Kelulusan Siswa</title>
+</head>
+  <body>
+    <script>
+       
+        const siswa = {
+            Andi: { matematika: 70, biologi: 80, fisika: 70, kimia: 90 },
+            Ria: { matematika: 90, biologi: 65, fisika: 80, kimia: 70 },
+            Bima: { matematika: 100, biologi: 70, fisika: 95, kimia: 50 },
+            Toni: { matematika: 60, biologi: 60, fisika: 70, kimia: 60 },
+            Putri: { matematika: 70, biologi: 100, fisika: 80, kimia: 75 }
+        };
+
+        const standarKelulusan = 60;
+
+        function cekKelulusan(nilai) {
+            return nilai.matematika >= standarKelulusan &&
+                   nilai.biologi >= standarKelulusan &&
+                   nilai.fisika >= standarKelulusan &&
+                   nilai.kimia >= standarKelulusan;
+        }
+
+        let lulus = [];
+        let tidakLulus = [];
+
+        for (let nama in siswa) {
+            if (cekKelulusan(siswa[nama])) {
+                lulus.push(nama);
+            } else {
+                tidakLulus.push(nama);
+            }
+        }
+
+        if (lulus.length === 0) {
+            console.log("Semua Tidak Lulus");
+        } else if (tidakLulus.length === 0) {
+            console.log("Semua Lulus");
+        } else {
+            console.log("Siswa yang lulus: " + lulus.join(", "));
+            console.log("Siswa yang tidak lulus: " + tidakLulus.join(", "));
+        }
+    </script>
+  </body>
+</html>
