@@ -1,14 +1,22 @@
-// Daftar pelanggan dan status membership
-let pelanggan = [
-    { nama: "Lena", membership: true },
-    { nama: "Rio", membership: false }
-];
-
-// Fungsi untuk mengecek membership dan menampilkan hasilnya
-pelanggan.forEach(function(pelanggan) {
-    if (pelanggan.membership) {
-        console.log(pelanggan.nama + " Mendapatkan diskon 5%");
-    } else {
-        console.log(pelanggan.nama + " Tidak mendapatkan diskon");
-    }
-});
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Percabangan JavaScript</title>
+  </head>
+  <body>
+    <p>
+      <script language="JavaScript">
+          
+        let pelanggan = [
+            { nama: "Lena", membership: true },
+            { nama: "Rio", membership: false }
+        ];
+        
+        // Fungsi untuk mengecek membership dan menampilkan hasilnya
+        pelanggan.forEach(function(pelanggan) {
+            if (pelanggan.membership) {
+                console.log(pelanggan.nama + " Mendapatkan diskon 5%");
+            } else {
+                console.log(pelanggan.nama + " Tidak mendapatkan diskon");
+            }
+        });
